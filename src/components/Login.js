@@ -22,7 +22,7 @@ const SignIn = () => {
            <h1>Diary</h1>
            <h4>Document + Journal + Reflect</h4>             
            {/* <div className="login google-auth"> */}
-            <button type="button" onClick={isLoggedIn} className=" btn btn-lg btn-block btn-black d-inline float-right">
+            <button type="button" onClick={isLoggedIn} className="btn-danger btn btn-lg btn-block btn-black d-inline float-right">
             Sign in with Google
           </button>
           <p><a href="">Create an Account</a></p>

@@ -14,7 +14,10 @@ const Interview = ({ interview, id, onDelete, note, timestamp, date, experience,
                     onClick={() => onDelete(id)}
                 />
                 </h3>
-                <p>{new Date(timestamp.toDate()).toLocaleString()}</p>
+                {timestamp ? (<p>{new Date(timestamp.toDate()).toLocaleString()}</p>)
+                :
+                <p>Loading</p>
+            }
                 <p>{note}</p>
                 <p>{date}</p>
                 </div>

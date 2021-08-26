@@ -16,6 +16,7 @@ const Interviews = ({ onDelete }) => {
             <Interview 
             key={interview.id}
             id={interview.id}
+            company={interview.data().company}
             note={interview.data().note}
             timestamp={interview.data().timestamp}
             date={interview.data().date}
